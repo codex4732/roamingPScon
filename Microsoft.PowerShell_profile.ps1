@@ -27,5 +27,16 @@ function set-newbranch {git checkout -b $args }
 Set-Alias -Name gcnb -Value set-newbranch
 
 # Git Commit 
-function git-commit {git commit -a}
-Set-Alias -Name gcom -Value git-commit
+function set-commit {git commit -a}
+Set-Alias -Name gcom -Value set-commit
+
+# Git Merge
+function set-merge {git merge $args}
+Set-Alias -Name gmb -Value set-merge
+
+# Delete Branch
+function remove-branch {git branch -d $args}
+Set-Alias -Name gdb -Value remove-branch 
+
+
+
